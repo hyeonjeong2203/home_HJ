@@ -8,7 +8,8 @@ img, svg {
 *, ::after, ::before {
     box-sizing: border-box;
 }
-user agent stylesheet
+
+
 img {
     overflow-clip-margin: content-box;
     overflow: clip; }
@@ -83,3 +84,33 @@ img {
 .card-title{
     text-align: center;
 }
+
+
+#iframe {
+    overflow-clip-margin: content-box !important;
+    overflow: clip !important;
+    border-width: 2px;
+    border-style: inset;
+    border-color: black;
+    border-image: initial;
+}
+
+#Task-btn {
+    width: 40%; /* 버튼 그룹의 너비를 조절할 수 있는 값으로 설정 */
+    margin-left: 30%; /* 가운데 정렬을 위해 좌우 마진을 auto로 설정 */
+}
+
+#portfoliosection{
+    margin-top: 150px;
+}
+
+
+
+
+/* 수정한 CSS 스타일: 닫기 버튼 클릭 시 iframe-container의 높이를 0으로 조절 */
+.closed {
+    height: 0;
+    overflow: hidden;
+
+}
+

@@ -182,95 +182,82 @@
         </section>
         <!-- end about -->
 
-        <div class="row row-pt-md">
-            <!-- 과제1 버튼 - iframe에 해당 HTML 파일 로드 -->
-            <div class="btn-group">
-                <button class="btn-primary" onclick="loadAssignment('reports/register.html')">과제1</button>
-                <!-- 과제2 버튼 - iframe에 해당 HTML 파일 로드 -->
-                <button class="btn-warning" onclick="loadAssignment('reports/Task2-Css.html')">과제2</button>
-                <!-- 과제3 버튼 - iframe에 해당 HTML 파일 로드 -->
-                <button class="btn-success" onclick="loadAssignment('reports/Task3-BS5.html')">과제3</button>
-                <!-- 과제4 버튼 - iframe에 해당 HTML 파일 로드 -->
-                <button class="btn-danger" onclick="loadAssignment('reports/Task4-JS.html')">과제4</button>
-            </div><br>
-            <script>
-
-                function loadAssignment(assignmentName) {
-                    // iframe의 src 속성에 해당 HTML 파일 경로 설정
-                    document.getElementById('iframe-container').src = assignmentName;
-                    // iframe의 크기 조절
-                    document.getElementById('iframe-container').style.height = '1000px'; /* 원하는 높이로 조절하세요. */
-                    document.getElementById('iframe-container').style.width = '100%';
-                }
-
-                function loadAssignment2(assignmentName) {
-                    // iframe의 src 속성에 해당 HTML 파일 경로 설정
-                    document.getElementById('carousel-container').src = assignmentName;
-                    // iframe의 크기 조절
-                    document.getElementById('carousel-container').style.height = '600px'; /* 원하는 높이로 조절하세요. */
-                    document.getElementById('carousel-container').style.width = '100%';
-                }
-            </script>
-
-            <!-- iframe을 통해 HTML 파일을 로드할 영역 -->
-            <iframe id="iframe-container" src="report3.html" style="height: 1000px; width: 100%;"></iframe>
-        </div>
 
 
 
+
+
+
+
+        <!--my works-->
         <section id="portfoliosection" class="task">
-        <h4 class="text-center fw-bold pb-4">My Works</h4>
+        <h1 class="text-center fw-bold pb-4">My Works</h1>
+
+            <section class="row row-pt-md">
+            <!-- 과제1 버튼 - iframe에 해당 HTML 파일 로드 -->
+            <div class="btn-group" id="Task-btn">
+                <button class="btn btn-primary" onclick="loadAssignment('reports/register.html')">과제1</button>
+                <!-- 과제2 버튼 - iframe에 해당 HTML 파일 로드 -->
+                <button class="btn btn-warning" onclick="loadAssignment('reports/Task2-Css.html')">과제2</button>
+                <!-- 과제3 버튼 - iframe에 해당 HTML 파일 로드 -->
+                <button class="btn btn-success" onclick="loadAssignment('reports/Task3-BS5.html')">과제3</button>
+                <!-- 과제4 버튼 - iframe에 해당 HTML 파일 로드 -->
+                <button class="btn btn-danger" onclick="loadAssignment('reports/Task4-JS.html')">과제4</button>
+                <!-- 클릭한 과제 페이지를 닫을 수 있는 버튼 로드-->
+                <button class="btn btn-secondary" onclick="closeAssignment()">닫기</button>
+            </div><br>
+
+                <!-- iframe을 통해 HTML 파일을 로드할 영역 -->
+                <iframe id="iframe-container" class="container-sm" ></iframe>
+            </section>
+
         <div class="container" >
             <div class="d-sm-flex">
-                <div class="p-5 flex-sm-fill">
+                <div class="p-1 flex-sm-fill">
                     <a href="/reports/login.html">
                         <p>로그인 페이지</p>
                         <i class="fa-solid fa-circle-plus"></i>
-                        <img src="Image/portfolio/seo-report_3534066.png" alt="log-img">
                     </a>
+                    <img src="Image/portfolio/seo-report_3534066.png" alt="log-img">
                 </div>
-                <div class="p-5 flex-sm-fill">
+                <div class="p-1 flex-sm-fill">
                     <a href="reports/register.html">
-                        <p>회원가입 페이지 과제</p>
+                        <p>회원가입 페이지</p>
                         <i class="fa-solid fa-circle-plus"></i>
-                        <img src="Image/portfolio/seo-report_3534066.png" alt="register_img">
                     </a>
+                    <img src="Image/portfolio/seo-report_3534066.png" alt="register_img">
                 </div>
 
-                <div class="p-5 flex-sm-fill">
+                <div class="p-1 flex-sm-fill">
                     <a href="reports/Task2-Css.html">
-                        <p>회원가입 CSS 적용 과제</p>
+                        <p>회원가입 CSS 적용</p>
                         <i class="fa-solid fa-circle-plus"></i>
-                        <img src="Image/portfolio/seo-report_3534066.png" alt="register-img">
                     </a>
+                    <img src="Image/portfolio/seo-report_3534066.png" alt="register-img">
                 </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="d-sm-flex">
-                <div class="p-5 flex-sm-fill">
+                <div class="p-1 flex-sm-fill">
                     <a href="reports/Task3-BS5.html">
-                        <p>회원가입 BS5 적용 과제</p>
+                        <p>회원가입 BS5 적용</p>
                         <i class="fa-solid fa-circle-plus"></i>
-                        <img src="Image/portfolio/seo-report_3534066.png" alt="register-img">
                     </a>
+                    <img src="Image/portfolio/seo-report_3534066.png" alt="register-img">
                 </div>
-
-                <div class="p-5 flex-sm-fill">
+                <div class="p-1 flex-sm-fill">
                     <a href="reports/Task4-JS.html">
                         <p>Javascript 과제</p>
                         <i class="fa-solid fa-circle-plus"></i>
-                        <img src="Image/portfolio/seo-report_3534066.png" alt="java-img">
                     </a>
+                    <img src="Image/portfolio/seo-report_3534066.png" alt="java-img">
                 </div>
 
-                <div class="p-5 flex-sm-fill">
+                <div class="p-1 flex-sm-fill">
                     <a href="reports/index.html">
                         <p>All</p>
                         <i class="fa-solid fa-circle-plus"></i>
-                        <img src="Image/portfolio/seo-report_3534066.png" alt="task-img">
                     </a>
+                    <img src="Image/portfolio/seo-report_3534066.png" alt="task-img">
                 </div>
+
             </div>
         </div>
 
