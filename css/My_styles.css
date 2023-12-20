@@ -94,8 +94,8 @@ img {
 }
 
 #Task-btn {
-    width: 30%; /* 버튼 그룹의 너비를 조절할 수 있는 값으로 설정 */
-    margin: 0 26%; /* 가운데 정렬을 위해 좌우 마진을 auto로 설정 */
+    width: 40%; /* 버튼 그룹의 너비를 조절할 수 있는 값으로 설정 */
+    margin: 0 30%; /* 가운데 정렬을 위해 좌우 마진을 auto로 설정 */
 }
 
 #portfoliosection{
@@ -110,5 +110,9 @@ img {
     height: 0;
     overflow: hidden;
 
+}
+
+.card-body {
+    font-family: 'Noto Serif KR', serif;
 }
 
