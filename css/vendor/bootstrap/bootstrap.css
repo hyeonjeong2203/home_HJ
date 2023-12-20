@@ -197,7 +197,7 @@ body {
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
-  text-align: var(--bs-body-text-align);
+
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -786,7 +786,6 @@ progress {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
 .row > * {
@@ -2148,10 +2147,7 @@ progress {
   height: 1.5em;
   margin: 0;
 }
-.form-control::-webkit-datetime-edit {
-  display: block;
-  padding: 0;
-}
+
 .form-control::-moz-placeholder {
   color: var(--bs-secondary-color);
   opacity: 1;
@@ -2629,10 +2625,7 @@ textarea.form-control-lg {
 .form-floating > .form-control-plaintext::placeholder {
   color: transparent;
 }
-.form-floating > .form-control:not(:-moz-placeholder-shown), .form-floating > .form-control-plaintext:not(:-moz-placeholder-shown) {
-  padding-top: 1.625rem;
-  padding-bottom: 0.625rem;
-}
+
 .form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown),
 .form-floating > .form-control-plaintext:focus,
 .form-floating > .form-control-plaintext:not(:placeholder-shown) {
@@ -4067,10 +4060,7 @@ textarea.form-control-lg {
   background-size: 100%;
 }
 
-.navbar-nav-scroll {
-  max-height: var(--bs-scroll-height, 75vh);
-  overflow-y: auto;
-}
+
 
 @media (min-width: 576px) {
   .navbar-expand-sm {

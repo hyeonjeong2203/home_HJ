@@ -53,7 +53,7 @@ function loadAssignment(url) {
 
     iframe.style.width = iframeWidth + "px";
     iframe.style.height = iframeHeight + "px";
-    iframe.style.marginTop = "10px";
+
 }
 
 // closeAssignment 함수 정의
