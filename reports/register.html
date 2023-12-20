@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>취업 정보 계정 만들기</title>
+
+
+</head>
+
+
+<body>
+<h1>취업 정보 계정 만들기</h1>
+
+<div> * 필수 입력 항목</div>
+
+<p>기본 정보</p>
+
+<form>
+    <label for="name">이름*</label>
+    <input id="name" name="name" size="8" type="text"> <br>
+
+    <label for="email">이메일*</label>
+    <input id="email" name="email" placeholder="id@domain_name" size="15" type="email"> <br>
+
+    <label for="pwd">암호*</label>
+    <input id="pwd" name="pwd" size="12" type="password"> <br>
+
+    <label for="pwd ver">암호 확인*</label>
+    <input id="pwd ver" name="pwd" size="12" type="password"> <br>
+
+    <label for="phone">모바일 폰*</label>
+    <input id="phone" name="phone" placeholder="010-0000-0000" size="13" type="tel"> <br>
+
+    <label for="url">개인 홈페이지</label>
+    <input id="url" name="url" placeholder="http://" size="30" type="url"> <br>
+
+    <label for="add">주소*</label>
+    <input id="add" name="add" size="30" type="text"> <br>
+
+    <p>학력</p>
+
+    <label for="school">학교 명*</label>
+    <input id="school" name="school" size="12" type="text"> <br>
+
+    <label for="major">전 공*</label>
+    <input id="major" name="major" size="12" type="text"> <br>
+
+    <label>졸업 여부*
+        <select id="whether" name="graduation">
+            <option value="1">---선택---</option>
+            <option value="2">졸업예정</option>
+            <option value="3">졸업</option>
+        </select>
+    </label> <br>
+
+    <label>졸업(예정)일
+        <input type="date">
+    </label>
+
+    <p>업무 경력</p>
+
+    <label for="company">근무업체명</label>
+    <input id="company" name="company" size="20" type="text"> <br>
+
+    <label for="position">직위</label>
+    <input id="position" name="position" size="10" type="text"> <br>
+
+    <label for="task">담당 업무</label>
+    <textarea cols="80" id="task" name="task" rows="10">이전 업체에서 담당한 업무를 기술하시오.
+    </textarea> <br>
+
+    <label for="year">근무년수 </label>
+    <input id="year" max="10" min="0" step="0.5" type="number">년
+
+
+    <p>자기소개서</p>
+
+    <span>
+        <label for="file">첨부 파일</label>
+        <input id="file" type="file" value="파일 선택">
+    </span>
+
+    <div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" value="제출">
+        <input type="reset" value="재작성">
+    </div>
+
+</form>
+</body>
+</html>

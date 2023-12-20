@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>취업 정보 계정 만들기</title>
+
+    <style>
+
+        #essential { /* 1번 */
+            color: red;
+            font-size: 10px;
+        }
+
+        p {
+            font-weight: bold; /* 2번 */
+            background-color: lightblue;
+            width: 800px;
+            padding-left: 10px;
+        }
+
+        .s { /* 3번 */
+            display: inline-block;
+            width: 130px;
+            text-align: right;
+            padding-right: 8px;
+            margin-left: 8px;
+
+        }
+
+        #button { /* 4번 */
+            margin-left: 200px;
+        }
+
+
+    </style>
+
+
+</head>
+
+
+<body>
+<h2>취업 정보 계정 만들기</h2>
+
+<div id="essential"> * 필수 입력 항목</div>
+
+<p>기본 정보</p>
+
+<form>
+    <div>
+        <span class="s">
+            <label for="name">이름*</label>
+        </span>
+        <input id="name" name="name" size="8" type="text">
+    </div>
+
+    <div>
+        <span class="s">
+            <label for="email">이메일*</label>
+        </span>
+        <input id="email" name="email" placeholder="id@domain_name" size="15" type="email"> <br>
+    </div>
+
+    <div>
+        <span class="s">
+            <label for="pwd">암호*</label>
+        </span>
+        <input id="pwd" name="pwd" size="12" type="password"> <br>
+    </div>
+
+    <div>
+        <span class="s">
+            <label for="pwd ver">암호 확인*</label>
+        </span>
+        <input id="pwd ver" name="pwd" size="12" type="password">
+    </div>
+
+    <div>
+        <span class="s">
+            <label for="phone">모바일 폰*</label>
+        </span>
+        <input id="phone" name="phone" placeholder="010-0000-0000" size="13" type="tel">
+    </div>
+
+    <div>
+        <span class="s">
+            <label for="url">개인 홈페이지</label>
+        </span>
+        <input id="url" name="url" placeholder="http://" size="30" type="url">
+    </div>
+
+    <div>
+        <span class="s">
+            <label for="add">주소*</label>
+        </span>
+        <input id="add" name="add" size="30" type="text">
+    </div>
+
+
+    <p>학력</p>
+
+    <div>
+        <span class="s">
+            <label for="school">학교 명*</label>
+        </span>
+        <input id="school" name="school" size="12" type="text">
+
+    </div>
+
+    <div>
+        <span class="s">
+            <label for="major">전 공*</label>
+        </span>
+        <input id="major" name="major" size="12" type="text">
+    </div>
+
+
+    <div>
+        <span class="s">
+            <label for="whether">졸업 여부*</label>
+        </span>
+        <select id="whether" name="graduation">
+            <option value="1">---선택---</option>
+            <option value="2">졸업예정</option>
+            <option value="3">졸업</option>
+        </select>
+    </div>
+
+    <div>
+        <span class="s">
+            <label for="grade">졸업(예정)일 </label>
+        </span>
+        <input id="grade" type="date">
+    </div>
+
+
+    <p>업무 경력</p>
+
+    <div>
+        <span class="s">
+            <label for="company">근무업체명</label>
+        </span>
+        <input id="company" name="company" size="20" type="text"> <br>
+    </div>
+
+    <div>
+        <span class="s">
+            <label for="position">직위</label>
+        </span>
+        <input id="position" name="position" size="10" type="text"> <br>
+    </div>
+
+    <div>
+        <span class="s">
+            <label for="task">담당 업무</label>
+        </span>
+        <textarea cols="80" id="task" name="task" rows="10">이전 업체에서 담당한 업무를 기술하시오.
+        </textarea>
+    </div>
+
+    <div>
+        <span class="s">
+            <label for="year">근무년수 </label>
+        </span>
+        <input id="year" max="10" min="0" step="0.5" type="number">년
+    </div>
+
+
+    <p>자기소개서</p>
+
+    <div>
+        <span class="s">
+            <label for="file">첨부 파일</label>
+        </span>
+        <input id="file" type="file" value="파일 선택">
+    </div>
+
+
+    <div id="button">
+        <input type="submit" value="제출">
+        <input type="reset" value="재작성">
+    </div>
+
+
+</form>
+</body>
+</html>
+

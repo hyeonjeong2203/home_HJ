@@ -1,0 +1,85 @@
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+img, svg {
+    vertical-align: middle;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip; }
+
+
+#task_HTML{
+    background-color: #0b2e13;
+    width: 20px;
+    height: 40px;
+}
+
+.aboutme{
+    padding-bottom: 100px;
+    background-color: white;
+}
+
+.task{
+    padding-top: 30px;
+}
+
+.infohero {
+    text-align: left;
+}
+
+/* 네비게이션 바 로고 스타일 */
+.navbar-brand {
+    font-family: 'Your Font', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+/* 네비게이션 메뉴 항목에 마우스 호버 시 색상 변화 */
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: rgba(252, 232, 135, 0.9);
+    color: #000000;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    border-radius: 50%;
+}
+/* 네비게이션 메뉴 스타일 */
+#mainNav{
+    background-color: #FFDB67;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px; /* 각 메뉴 항목 간의 오른쪽 여백을 조절합니다 (필요에 따라 조절) */
+}
+.navbar-nav .nav-item .nav-link {
+    font-size: 14px; /* 원하는 글자 크기로 조절 (필요에 따라 조절) */
+}
+
+#favritysection{
+    background-color:#181715;
+    padding: 50px;
+}
+
+
+.carousel-inner {
+    height: 100vh;
+}
+
+.card-text{
+    font-size: small;
+    text-align: end;
+}
+
+.card-title{
+    text-align: center;
+}

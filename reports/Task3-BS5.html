@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>웹 폼</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+<div class="container mt-3">
+    <h2 class="text-center">취업 정보 계정 만들기</h2>
+
+    <hr>
+
+    <div><span class="text-danger">*</span>필수 입력 항목</div>
+
+    <form>
+        <div class="my-3 p-2 text-bg-primary">기본 정보</div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="my-3 me-3">
+                    <label class="form-label" for="usr_name">이 름<span class="text-danger">*</span></label>
+                    <input class="form-control" id="usr_name" name="usr_name" required="" type="text">
+                </div>
+
+                <div class="mb-3 me-3">
+                    <label class="form-label" for="email">이메일<span class="text-danger">*</span></label>
+                    <input class="form-control" id="email" name="email" placeholder="id@domain_name" required=""
+                           type="text">
+                </div>
+
+                <div class="mb-3 me-3">
+                    <label class="form-label" for="pwd">암 호<span class="text-danger">*</span></label>
+                    <input class="form-control" id="pwd" name="pwd" placeholder="암 호" required="" type="password">
+                </div>
+
+                <div class="mb-3 me-3">
+                    <label class="form-label" for="pwd_c">암호 확인<span class="text-danger">*</span></label>
+                    <input class="form-control" id="pwd_c" name="pwd" placeholder="암호 확인" required="" type="password">
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="my-3 me-3">
+                    <label class="form-label" for="phone">모바일 폰<span class="text-danger">*</span></label>
+                    <input class="form-control" id="phone" name="phone" placeholder="010-0000-0000" required=""
+                           type="tel">
+                </div>
+
+                <div class="mb-3 me-3">
+                    <label class="form-label" for="home">홈 페이지</label>
+                    <input class="form-control" id="home" name="home" placeholder="http://" type="text">
+                </div>
+
+                <div class="mb-3 me-3">
+                    <label class="form-label" for="add">주 소<span class="text-danger">*</span></label>
+                    <input class="form-control" id="add" name="add" required="" type="password">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mt-5 mb-3 p-2 text-bg-success">학 력</div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="my-3 me-3">
+                    <label class="form-label" for="school">학교명<span class="text-danger">*</span></label>
+                    <input class="form-control" id="school" name="school" type="text">
+                </div>
+
+                <div class="mb-2 me-3">
+                    <label class="form-label" for="major">전 공<span class="text-danger">*</span></label>
+                    <input class="form-control" id="major" name="major" type="text">
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="my-3 me-3">
+                    <label class="form-label" for="graduation">졸업 여부<span class="text-danger">*</span></label>
+                    <select class="form-select" id="graduation" name="status">
+                        <option value="0">--- 선택 ---</option>
+                        <option value="1">졸업 예정</option>
+                        <option value="2">졸 업</option>
+                    </select>
+                </div>
+
+                <div class="mb-3 me-3">
+                    <label class="form-label" for="s_year">졸업(예정)년도<span class="text-danger">*</span></label>
+                    <input class="form-control" id="s_year" name="s_year" type="date">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mt-5 mb-3 p-2 text-bg-secondary">업무 경력</div>
+        <div class="my-3">
+            <div class="my-3 me-5 d-sm-inline">최종 직위</div>
+            <div class="form-check form-check-inline">
+                <input checked="" class="form-check-input" id="emp1" name="position" type="radio">
+                <label class="form-check-label" for="emp1">사원급</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" id="emp2" name="position" type="radio">
+                <label class="form-check-label" for="emp2">대리 ~ 과장</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" id="emp3" name="position" type="radio">
+                <label class="form-check-label" for="emp3">차장급 이상</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" id="emp4" name="position" type="radio">
+                <label class="form-check-label" for="emp4">임원급</label>
+            </div>
+        </div>
+
+
+        <div class="mb-3">
+            <label class="my-3 form-label" for="duty">주요 담당 업무</label>
+            <textarea class="form-control" id="duty" name="duty" rows="10">담당했던 주요 업무를 기술하시오.</textarea>
+        </div>
+
+        <div class="my-5 text-center">
+            <input class="btn btn-outline-primary" type="submit" value="제 출">
+            <input class="btn btn-outline-primary" type="reset" value="재작성">
+        </div>
+    </form>
+</div>
+</body>
+</html>
