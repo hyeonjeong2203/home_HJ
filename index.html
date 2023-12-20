@@ -22,6 +22,11 @@
     <meta name="twitter:image" content="">
     <meta id="tw_url" name="twitter:url" content="">
     <!-- main style -->
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Title Here</title>
+
+    <!-- Optional: Custom Fonts -->
     <link href="css/main.css" rel="stylesheet">
     <link href="css/My_styles.css" rel="stylesheet">
     <!-- responsive style -->
@@ -30,6 +35,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
     <script src="js/my_scripts.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+
+
 </head>
 
 <body>
@@ -174,8 +182,42 @@
         </section>
         <!-- end about -->
 
+        <div class="row row-pt-md">
+            <!-- 과제1 버튼 - iframe에 해당 HTML 파일 로드 -->
+            <div class="btn-group">
+                <button class="btn-primary" onclick="loadAssignment('reports/register.html')">과제1</button>
+                <!-- 과제2 버튼 - iframe에 해당 HTML 파일 로드 -->
+                <button class="btn-warning" onclick="loadAssignment('reports/Task2-Css.html')">과제2</button>
+                <!-- 과제3 버튼 - iframe에 해당 HTML 파일 로드 -->
+                <button class="btn-success" onclick="loadAssignment('reports/Task3-BS5.html')">과제3</button>
+                <!-- 과제4 버튼 - iframe에 해당 HTML 파일 로드 -->
+                <button class="btn-danger" onclick="loadAssignment('reports/Task4-JS.html')">과제4</button>
+            </div><br>
+            <script>
 
-        <!-- portfolio section -->
+                function loadAssignment(assignmentName) {
+                    // iframe의 src 속성에 해당 HTML 파일 경로 설정
+                    document.getElementById('iframe-container').src = assignmentName;
+                    // iframe의 크기 조절
+                    document.getElementById('iframe-container').style.height = '1000px'; /* 원하는 높이로 조절하세요. */
+                    document.getElementById('iframe-container').style.width = '100%';
+                }
+
+                function loadAssignment2(assignmentName) {
+                    // iframe의 src 속성에 해당 HTML 파일 경로 설정
+                    document.getElementById('carousel-container').src = assignmentName;
+                    // iframe의 크기 조절
+                    document.getElementById('carousel-container').style.height = '600px'; /* 원하는 높이로 조절하세요. */
+                    document.getElementById('carousel-container').style.width = '100%';
+                }
+            </script>
+
+            <!-- iframe을 통해 HTML 파일을 로드할 영역 -->
+            <iframe id="iframe-container" src="report3.html" style="height: 1000px; width: 100%;"></iframe>
+        </div>
+
+
+
         <section id="portfoliosection" class="task">
         <h4 class="text-center fw-bold pb-4">My Works</h4>
         <div class="container" >
@@ -354,7 +396,7 @@
                             <div class="card">
                                 <img src="Image/Favority/movie5.jpg" alt="Movie 5">
                                 <div class="card-body">
-                                    <p/>
+                                    <p></p>
                                     <h6 class="card-title">" 기괴하고 따뜻한, 색다른 사랑의 형태를 보여준 로맨스 영화 "</h6>
                                     <p class="card-text">18.02.22 / 기예르모 델 토로</p>
                                     <hr>
@@ -381,7 +423,7 @@
                             <div class="card">
                                 <img src="Image/Favority/movie7.jpg" class="card-img-top" alt="Movie 7">
                                 <div class="card-body">
-                                    <p/>
+                                    <p></p>
                                     <h6 class="card-title">" 4차원적 영상미가 넘치는 10대 코믹 로맨스 영화 "</h6>
                                     <p class="card-text">10년도 / 리처드 아이오와디</p>
                                     <hr>
@@ -394,7 +436,7 @@
                             <div class="card">
                                 <img src="Image/Favority/Black Swan, 2011 — Official Poster_ Direção_ Darren Aronofsky_.jpg" class="card-img-top" alt="Movie 8">
                                 <div class="card-body">
-                                    <p/>
+                                    <p></p>
                                     <h6 class="card-title">" 완벽에 대한 강박, 흑조가 된 백조 "</h6>
                                     <p class="card-text">11.02.24 / 대런 아로노프스키</p>
                                     <hr>
