@@ -36,32 +36,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // loadAssignment 함수 정의
-function loadAssignment(url) {
+    function loadAssignment(url) {
     // iframe에 해당 HTML 파일 로드
-    var iframe = document.getElementById("iframe-container");
-    iframe.src = url;
+        var iframe = document.getElementById("iframe-container");
+        iframe.src = url;
 
     // 컨테이너에 'closed' 클래스 제거 (초기에는 추가하지 않음)
-    iframe.classList.remove("closed");
+       iframe.classList.remove("closed");
 
-    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-    var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+        var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+        var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
 
-    var iframeWidth = viewportWidth * 0.8;
-    var iframeHeight = viewportHeight * 0.6;
+        var iframeWidth = viewportWidth * 0.8;
+        var iframeHeight = viewportHeight * 0.6;
 
-    iframe.style.width = iframeWidth + "px";
-    iframe.style.height = iframeHeight + "px";
-}
+        iframe.style.width = iframeWidth + "px";
+        iframe.style.height = iframeHeight + "px";
+    }
 
 // closeAssignment 함수 정의
-function closeAssignment() {
-    // iframe에 'closed' 클래스 추가
-    var iframe = document.getElementById("iframe-container");
-    iframe.classList.add("closed");
+    function closeAssignment() {
+        // iframe에 'closed' 클래스 추가
+        var iframe = document.getElementById("iframe-container");
+        iframe.classList.add("closed");
 
     // iframe 크기를 0으로 설정하여 숨김
-    iframe.style.width = "0";
-    iframe.style.height = "0";
-    iframe.style.marginTop = "initial"; // 'innitial'을 'initial'로 수정
-}
+        iframe.style.width = "0";
+        iframe.style.height = "0";
+        iframe.style.marginTop = "initial"; // 'innitial'을 'initial'로 수정
+    }
