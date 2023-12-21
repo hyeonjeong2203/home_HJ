@@ -95,7 +95,7 @@ img {
 
 #Task-btn {
     width: 30%; /* 버튼 그룹의 너비를 조절할 수 있는 값으로 설정 */
-    margin: 0 33%; /* 가운데 정렬을 위해 좌우 마진을 auto로 설정 */
+    margin: 0 30%; /* 가운데 정렬을 위해 좌우 마진을 auto로 설정 */
 }
 
 
@@ -118,6 +118,21 @@ img {
 }
 
 #aboutsection{
+    font-family: 'Noto Serif KR', serif;
+    font-size: large;
+}
+
+
+.interest{
+    font-family: 'Noto Serif KR', serif;
+    font-size: medium;
+    border-radius: 10px; /* 모서리를 둥글게 만들기 */
+    padding: 15px; /* 내용 주위에 여백 추가 (선택 사항) */
+    background-color: #ffffff; /* 배경색 지정 */
+    /* 기타 스타일 속성들 */
+}
+
+p{
     font-family: 'Noto Serif KR', serif;
     font-size: large;
 }

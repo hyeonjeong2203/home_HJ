@@ -526,24 +526,26 @@
                     <div class="col-sm-6">
                         <div class="contactform">
                             <!-- form contact -->
-                            <form id="formcontact" class="contactform">
+                            <form id="formcontact" class="contactform was-validated">
                                 <!-- input contact -->
                                 <div class="contactform__form-group row">
                                     <div class="col-sm-12 pt-4">
                                         <label for="yourname" class="pb-2 ">Input your name</label>
-                                        <input type="text" id="yourname" class="contactform__inputtext input-control " placeholder="Your name" name="name" data-name="name" />
+                                        <input type="text" id="yourname" class="contactform__inputtext input-control " placeholder="Your name" name="name" data-name="name" required />
+
                                     </div>
                                     <!-- input contact  -->
                                     <div class="col-sm-12 pt-4">
                                         <label for="yourmail" class="pb-2 ">Input your mail</label>
-                                        <input type="email" id="yourmail" class="contactform__inputtext input-control " placeholder="Your email address" name="email" data-name="email" />
+                                        <input type="email" id="yourmail" class="contactform__inputtext input-control " placeholder="Your email address" name="email" data-name="email" required />
+                                        <div class="invalid-feedback">Fill out a valid email address.</div>
                                     </div>
                                     <!-- input contact -->
                                     <div class="col-sm-12 pt-4">
                                         <label for="comment" class="pb-2">Input your message</label>
-                                        <textarea class="contactform__comentarea input-control" id="comment" placeholder="Your comment" name="comment" data-name="comment"></textarea>
-                                        <button id="submitbutton" class="btn mt-5  contactform__submitbuton linkbtn mt-5 mb-3" type="submit">Submit now</button>
+                                        <textarea class="contactform__comentarea input-control" id="comment" placeholder="Your comment" name="comment" data-name="comment" required></textarea>
                                     </div>
+                                    <button id="submitbutton" class="btn mt-5  contactform__submitbuton linkbtn mt-5 mb-3" type="submit">Submit now</button>
                                 </div>
                             </form>
                         </div>
