@@ -95,7 +95,7 @@ img {
 
 #Task-btn {
     width: 30%; /* 버튼 그룹의 너비를 조절할 수 있는 값으로 설정 */
-    margin: 0 30%; /* 가운데 정렬을 위해 좌우 마진을 auto로 설정 */
+    margin: 0 33%; /* 가운데 정렬을 위해 좌우 마진을 auto로 설정 */
 }
 
 
@@ -127,56 +127,16 @@ img {
 }
 
 
+a {
+    text-decoration: none;
+  }
 
-
-#myAudio {
-    width: 180px; /* 원하는 가로 크기 설정 */
-    height: 35px; /* 자동으로 세로 크기 조절 (비율 유지) */
-    display: inline-block;
-    margin: 0 100px; /* 가로 중앙 정렬을 위한 margin 설정 */
+/* 사용자 정의 툴팁 스타일 */
+.bs-tooltip-bottom {
+    margin-top: 0.5rem; /* 툴팁의 상단 여백 조절 */
+}
+.bs-tooltip-bottom .arrow::before {
+    border-bottom-color: #007bff !important; /* 툴팁 화살표 색상 변경 */
 }
 
-#myAudioContainer {
-  text-align: center;
-  position: relative;
-   /* 툴팁을 오디오 바로 위에 위치시키기 위해 Flexbox를 사용합니다. */
-  align-items: flex-end; /* 세로 정렬을 오디오 아래로 조정합니다. */
-}
 
-#myAudio {
-  width: 180px;
-  height: 35px;
-}
-
-.tooltip {
-  visibility: hidden;
-  width: 190px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: calc(100% + 10px);
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-#myAudioContainer:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
-}
-
-.tooltip::before {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 80%;
-  margin-left: -10px;
-  border-width: 10px;
-  border-style: solid;
-  border-color: #333 transparent transparent transparent;
-}
