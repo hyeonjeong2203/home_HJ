@@ -35,8 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-        // loadAssignment 함수 정의
+// loadAssignment 함수 정의
 function loadAssignment(url) {
     // iframe에 해당 HTML 파일 로드
     var iframe = document.getElementById("iframe-container");
@@ -53,7 +52,6 @@ function loadAssignment(url) {
 
     iframe.style.width = iframeWidth + "px";
     iframe.style.height = iframeHeight + "px";
-
 }
 
 // closeAssignment 함수 정의
@@ -65,6 +63,5 @@ function closeAssignment() {
     // iframe 크기를 0으로 설정하여 숨김
     iframe.style.width = "0";
     iframe.style.height = "0";
-    iframe.style.marginTop = "innitial";
-
+    iframe.style.marginTop = "initial"; // 'innitial'을 'initial'로 수정
 }
