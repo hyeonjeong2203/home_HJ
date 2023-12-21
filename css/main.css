@@ -59,7 +59,6 @@ Filename      : main.css
     
     body {
         font-family: 'Poppins';
-        font-size: 15px;
         font-weight: 400;
         background: #FFDB67;
         color: #181715;
@@ -388,6 +387,11 @@ Filename      : main.css
         padding: 50px 0 0;
     }
     
+    .abouthero h1 {
+        font-size: 50px;
+        font-weight: 600;
+    }
+
     .abouthero h3 {
         font-size: 50px;
         font-weight: 600;
