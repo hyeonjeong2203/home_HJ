@@ -114,6 +114,16 @@ img {
 
 #movie-sub {
     font-family: 'Noto Serif KR', serif;
+
+}
+
+#aboutsection{
+    font-family: 'Noto Serif KR', serif;
+    font-size: medium;
+}
+
+.infoabout__wrap{
+    margin-bottom: 40px;
 }
 
 
