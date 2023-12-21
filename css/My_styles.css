@@ -36,10 +36,10 @@ img {
 
 /* 네비게이션 바 로고 스타일 */
 .navbar-brand {
-    font-family: 'Your Font', sans-serif;
+    font-family: 'Noto Serif KR', serif;
     font-size: 23px;
     font-weight: bold;
-    color: #2cd5b7;
+    color: #36be03;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
