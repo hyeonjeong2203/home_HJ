@@ -133,7 +133,7 @@ img {
     width: 180px; /* 원하는 가로 크기 설정 */
     height: 35px; /* 자동으로 세로 크기 조절 (비율 유지) */
     display: inline-block;
-    margin: 0 200px; /* 가로 중앙 정렬을 위한 margin 설정 */
+    margin: 0 100px; /* 가로 중앙 정렬을 위한 margin 설정 */
 }
 
 #myAudioContainer {
