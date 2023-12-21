@@ -132,6 +132,7 @@ img {
     background-color: #ffffff; /* 배경색 지정 */
     line-height: 2;
     text-align: left;
+    margin-top: 20px;
 }
 
 p{
