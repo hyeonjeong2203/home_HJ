@@ -47,6 +47,13 @@ Filename      : main.css
         src: url("../font/Poppins-Regular.woff2") format("woff2");
         font-display: swap;
     }
+    @font-face {
+        font-family: "Noto Serif KR";
+        font-style: normal;
+        font-weight: 400;
+        src: url("../font/NotoSerifKR-Regular.otf");
+        font-display:swap;
+    }
     /*
 * ----------------------------------------------------------------------------------------
 * 01.BASE CSS. 

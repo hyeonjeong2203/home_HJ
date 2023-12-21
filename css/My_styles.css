@@ -81,6 +81,7 @@ img {
 
 .card-title{
     text-align: center;
+    line-height: 1.7;
 }
 
 
@@ -129,7 +130,8 @@ img {
     border-radius: 10px; /* 모서리를 둥글게 만들기 */
     padding: 15px; /* 내용 주위에 여백 추가 (선택 사항) */
     background-color: #ffffff; /* 배경색 지정 */
-    /* 기타 스타일 속성들 */
+    line-height: 2;
+    text-align: left;
 }
 
 p{
